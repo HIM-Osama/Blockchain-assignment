@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BakeChain Dashboard</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <style>
+  </style>
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="logo">BakeChain</div>
+    <nav class="nav">
+      <a href="#dashboard" class="active">Dashboard</a>
+      <a href="#addTransaction">Add Transaction</a>
+      <a href="#mineBlock">Mine Block</a>
+      <a href="#blockchainView">Blockchain</a>
+      <a href="#validateChain">Validate Chain</a>
+    </nav>
+  </aside>
+
+  <main class="main">
+
+    <div class="header" id="dashboard">
+      <h1><span style="color: #DE3E34;">Dash</span>board 🎂</h1>
+      <span class="status">Active</span>
+    </div>
+
+    <section class="cards">
+      <div class="card">
+        <h2>Total Blocks</h2>
+        <p>5</p>
+      </div>
+      <div class="card">
+        <h2>Total Transactions</h2>
+        <p>23</p>
+      </div>
+      <div class="card">
+        <h2>Chain Status</h2>
+        <p style="color: var(--success)">Valid</p>
+      </div>
+    </section>
+
+    <section class="form-card" id="addTransaction">
+      <h2 style="margin-bottom: 24px">Add Baking Transaction</h2>
+      <div class="form-group">
+        <label>Product Name</label>
+        <input type="text" placeholder="Bread" />
+      </div>
+      <div class="form-group">
+        <label>Quantity</label>
+        <input type="number" placeholder="20" />
+      </div>
+      <div class="form-group">
+        <label>Baker Name</label>
+        <input type="text" placeholder="John" />
+      </div>
+      <button class="btn">Add Transaction</button>
+    </section>
+
+    <!-- Mine Block Section -->
+    <section class="form-card" id="mineBlock">
+      <h2 style="margin-bottom: 24px">Mine New Block</h2>
+      <p>Click the button below to mine a new block:</p>
+      <button class="btn">Mine Block</button>
+    </section>
+
+    <section id="blockchainView">
+      <div class="block">
+        <h3>Block #1</h3>
+        <p><strong>Timestamp:</strong> 2025-01-01</p>
+        <p><strong>Previous Hash:</strong> 0000abc</p>
+        <p><strong>Hash:</strong> 0000xyz</p>
+        <p><strong>Nonce:</strong> 1024</p>
+        <ul class="transactions">
+          <li>Bread | Qty: 20 | Baker: John</li>
+          <li>Cake | Qty: 5 | Baker: Mary</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="validate success" id="validateChain">Blockchain is Valid</section>
+
+  </main>
+
+  <script src="./js/script.js"></script>
+</body>
+</html>
