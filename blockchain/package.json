@@ -4,7 +4,7 @@
   "description": "Bakery Business Blockchain",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node dev/test.js"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Aduradu-Chinazom/Blockchain-assignment#readme",
   "dependencies": {
-    "sha-256": "^1.0.3"
+    "sha-256": "^1.0.3",
+    "sha256": "^0.2.0"
   }
 }

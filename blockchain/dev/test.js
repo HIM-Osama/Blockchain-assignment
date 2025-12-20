@@ -1,7 +1,12 @@
-const { Blockchain, Block } = require("./blockchain")
+const { Blockchain, Block } = require("./blockchain");
 
 const testCoin = new Blockchain();
-testCoin.addBlock(new Block(1, "10/12/25", {amount: 4}))
-testCoin.addBlock(new Block(2, "11/12/25", {amount: 4}))
 
-console.log(JSON.stringify(testCoin, null, 4))
+testCoin.pendingTransactions.push({ amount: 4 });
+testCoin.minePendingTransactions();
+
+testCoin.pendingTransactions.push({ amount: 4 });
+testCoin.minePendingTransactions();
+
+// Print the blockchain
+console.log(JSON.stringify(testCoin, null, 4));
